@@ -1,0 +1,21 @@
+<div class="fluper">
+    <div class="search-container">
+        <div [formGroup]="groupForm">
+            <mat-form-field class="example-full-width">
+                <input type="text" matInput formControlName="keyword" placeholder="Type minimum 3 characters">
+            </mat-form-field>
+            <!-- <input type="text" formControlName="keyword" placeholder="Type minimum 3 characters"> -->
+        </div>
+    </div>
+    <div class="list-container" *ngIf="items && items.length">
+        <div class="list" *ngFor="let item of items">
+            <div class="keyword">{{item?.keyword}}</div>
+            <div class="image-container">
+                <div class="image" *ngFor="let image of item?.images">
+                    <img [src]="image" class="img">
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>

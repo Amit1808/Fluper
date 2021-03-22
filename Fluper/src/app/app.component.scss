@@ -1,0 +1,38 @@
+.search-container{
+    display: grid;
+    place-content: center;
+    margin: 24px;
+    height: 69px;
+}
+
+.list-container{
+    overflow: auto;
+    height: calc(100% - 69px);
+    .list{
+        overflow: hidden;
+        .keyword{
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 24px;
+            text-transform: capitalize;
+        }
+        .image-container{
+            overflow: hidden;
+            .image{
+                height: 200px;
+                width: 200px;
+                float: left;
+                margin-right: 24px;
+                margin-bottom: 24px;
+                .img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.fluper{
+    
+}
